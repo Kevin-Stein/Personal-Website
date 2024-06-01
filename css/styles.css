@@ -7,16 +7,7 @@ html,
   margin: 0;
   width: 100%;
   height: 100%;
-  
-}
-
-.background-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: fixed;
-  z-index: -2;
-  transform: rotate(180deg);
+  cursor: none;
 }
 .intro h1 {
   display: flex;
@@ -39,8 +30,10 @@ html,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
+  
   z-index: 10;
+  /* box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.281); */
 }
 
 .header .logo {
@@ -52,6 +45,7 @@ html,
   display: flex;
   gap: 100px;
   margin-right: 200px;
+  
 }
 
 .navbar a {
@@ -62,10 +56,12 @@ html,
   letter-spacing: 1.5px;
   color: rgb(121, 121, 121);
   text-decoration: none;
+
 }
 .navbar a:hover {
   color: white;
-  text-decoration: overline;
+  transform: translateY(-5px);
+  border-bottom: 1px solid white;
 }
 
 .home {
@@ -74,16 +70,14 @@ html,
   display: flex;
   position: relative;
   justify-content: space-between;
- margin:auto;
- margin-bottom: 20%;
- top: 350px;
- align-self: center;
- 
- 
-  
+  margin: auto;
+  margin-bottom: 20%;
+  top: 350px;
+  align-self: center;
+ /*  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.281); */
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
   /* border: 2px solid rgb(69, 236, 3); */
 }
 
@@ -93,7 +87,6 @@ html,
   justify-content: space-evenly;
   max-width: 50%;
   padding: 0px 100px 0px;
-
   color: white;
   font-family: "Merriweather", serif;
   /* border: 2px solid red; */
@@ -121,20 +114,22 @@ html,
 
 .img_pic {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 60px;
+  right: 100px;
   border-radius: 50%;
   max-height: 60%;
-  opacity: 80%;
   transform: scaleX(-1);
+  box-shadow: 0px 0px 10px 2px white;
 
   /* border: 2px solid red; */
 }
-
+#app {
+  overflow: hidden;
+}
 #app canvas {
   display: block;
-  opacity: 60%;
   position: fixed;
   z-index: -1;
   top: 0;
+  /* opacity: 80%; */
 }
