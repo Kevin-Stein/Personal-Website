@@ -6,5 +6,8 @@
   "nf": {
     "template": "empty"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "three": "^0.165.0"
+  }
 }
