@@ -8,6 +8,7 @@
   },
   "private": true,
   "dependencies": {
-    "three": "^0.165.0"
+    "three": "^0.165.0",
+    "threejs-toys": "^0.0.8"
   }
 }
