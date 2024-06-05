@@ -4,7 +4,7 @@
 body,
 main,
 html,
-#app {
+{
   margin: 0;
   /*   cursor: none;*/
   font-family: "Merriweather", serif;
@@ -29,7 +29,6 @@ html,
 .header__logo {
   height: 60px;
   margin-left: 15%;
- 
 }
 .header__logo:hover {
   height: 60px;
@@ -38,11 +37,9 @@ html,
 }
 
 .navbar {
-  
-  
   margin-right: 10%;
 }
-.navbar__list{
+.navbar__list {
   display: flex;
   gap: 3rem;
   list-style-type: none;
@@ -55,14 +52,12 @@ html,
   letter-spacing: 1.5px;
   color: whitesmoke;
   text-decoration: none;
-  
 }
 .navbar__list a:hover {
   color: rgb(255, 3, 234);
   /* text-shadow: 0 0 0.9rem currentColor; */
   border-bottom: 1px solid currentColor;
 }
-
 
 .home {
   width: 1300px;
@@ -119,19 +114,17 @@ html,
   /* border: 2px solid red; */
 }
 
-
-.icon__list{
+.icon__list {
   display: flex;
-    list-style-type: none;
-    gap: 1.5rem;
-    padding: 0;
-
+  list-style-type: none;
+  gap: 1.5rem;
+  padding: 0;
 }
 .icon__list a:hover {
   filter: brightness(0) saturate(100%) invert(23%) sepia(85%) saturate(2552%)
     hue-rotate(294deg) brightness(104%) contrast(140%);
 }
-#app canvas {
+#app canvas{
   display: block;
   position: fixed;
   z-index: -1;
