@@ -2,12 +2,12 @@ import { neonCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-t
 
 neonCursor({
   el: document.getElementById("app"),
-  shaderPoints: 30,
-  curvePoints: 50,
+  shaderPoints: 16,
+  curvePoints: 80,
   curveLerp: 0.5,
   radius1: 5,
-  radius2: 10,
-  velocityTreshold: 100,
+  radius2: 30,
+  velocityTreshold: 10,
   sleepRadiusX: 200,
   sleepRadiusY: 200,
   sleepTimeCoefX: 0.0025,

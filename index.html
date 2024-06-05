@@ -21,18 +21,20 @@
 
   <body>
     <header class="header">
-      <img class="logo" src="./img/ks logo_white_new.svg" alt="[KS]" />
+      <img class="header__logo" src="./img/ks logo_white_new.svg" alt="[KS]" />
       <nav class="navbar">
-        <a href="#">About Me</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <ul class="navbar__list">
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <section class="home">
       <article class="intro">
         <h1>
-          <spam class="name">Hi, i'm Kevin Stein</spam>web developer and graphic
+          <span class="name">Hi, i'm Kevin Stein</span>web developer and graphic
           designer <br />
           from germany
         </h1>
@@ -42,17 +44,25 @@
           ab architecto perferendis, veritatis voluptatem tenetur deleniti animi
           unde molestiae dolores!
         </p>
-        <social_media class="icons">
-          <a href="https://www.linkedin.com/in/kevin-stein-692ab71a3/"
-            ><img src="./assets/linkedin-logo-24.png" alt="Linked-In"
-          /></a>
-          <a href="https://www.xing.com/profile/Kevin_Stein46"
-            ><img src="./assets/xing-logo-24.png" alt="Linked-In"
-          /></a>
-          <a href="https://www.instagram.com/shinymcchicken/"
-            ><img src="./assets/instagram-logo-24.png" alt="Linked-In"
-          /></a>
-        </social_media>
+        <section>
+          <ul class="icon__list">
+            <li>
+              <a href="https://www.linkedin.com/in/kevin-stein-692ab71a3/"
+                ><img src="./assets/linkedin-logo-24.png" alt="Linked-In"
+              /></a>
+            </li>
+           <li>
+              <a href="https://www.xing.com/profile/Kevin_Stein46"
+                ><img src="./assets/xing-logo-24.png" alt="Linked-In"
+              /></a>
+           </li>
+           <li>
+              <a href="https://www.instagram.com/shinymcchicken/"
+                ><img src="./assets/instagram-logo-24.png" alt="Linked-In"
+              /></a>
+           </li>
+          </ul>
+        </section>
       </article>
       <img class="img_pic" src="./img/124559416.jpg" alt="profile_img" />
     </section>
