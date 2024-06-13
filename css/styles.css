@@ -1,13 +1,26 @@
 * {
   box-sizing: border-box;
 }
-body,
-main,
-html,
-{
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 0;
-  /*   cursor: none;*/
+  
   font-family: "Merriweather", serif;
+  min-height: 100vh;
+}
+#app {
+  overflow: hidden;
+  touch-action: pan-up;
+}
+#app canvas {
+  display: block;
+  position: fixed;
+
+  z-index: -1;
+  top: 0;
 }
 
 .header {
@@ -59,17 +72,17 @@ html,
   border-bottom: 1px solid currentColor;
 }
 
-.home {
+.about_me {
   width: 1300px;
   height: 800px;
   display: flex;
-  position: relative;
-  margin: 350px auto 0;
+margin-top: 15rem;
+ 
+
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(30px);
-  /*   border: 2px solid rgb(69, 236, 3);
- */
+
 }
 
 .intro {
@@ -123,11 +136,4 @@ html,
 .icon__list a:hover {
   filter: brightness(0) saturate(100%) invert(23%) sepia(85%) saturate(2552%)
     hue-rotate(294deg) brightness(104%) contrast(140%);
-}
-#app canvas{
-  display: block;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  /* opacity: 80%; */
 }
